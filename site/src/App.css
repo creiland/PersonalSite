@@ -1,0 +1,84 @@
+@import "https://use.typekit.net/wdu6zyu.css";
+
+.App {
+  text-align: center;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: none;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Navigation Styles*/
+.mynav{
+  padding:.25em;
+  margin-bottom: 1rem;
+  top:0;
+  left:0;
+  width:100%;
+  background: #002c4a;
+  color: #f6e290;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.logo{
+  margin-left: .25em;
+  margin-right: 1em;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-self: left;
+  cursor: pointer;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.mynav-dropdown{
+  margin-top: 1em;
+}
+
+.logo-text:visited, .logo-text:link, .logo-text:focus, .logo-text:active{
+  color: inherit;
+  text-decoration: none
+}
+
+.logo>h1 {
+  margin: .25em;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
