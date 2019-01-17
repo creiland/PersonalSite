@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { NavDropdown, Navbar, Nav, NavItem, MenuItem } from 'react-bootstrap';
 import '../App.css'
-import WebDevelopment from './WebDevelopment.js'
 
 class NavBar extends Component{
     render() {
@@ -19,7 +18,7 @@ class NavBar extends Component{
             <Navbar className="mynav" inverse collapseOnSelect>
             <Navbar.Header className="logo">
                 <Navbar.Brand className="logo">
-                    <h1><Link to='/' className="logo-text">Conor Reiland</Link></h1>
+                    <h1><Link to='/' className="logo-text">CONOR REILAND</Link></h1>
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>
@@ -30,12 +29,24 @@ class NavBar extends Component{
                     <MenuItem eventKey={1.2}><Link to='/programming/datascience'>Data Science</Link></MenuItem>
                     <MenuItem eventKey={1.3}><Link to='/programming/misc'>Miscellaneous</Link></MenuItem>
                 </NavDropdown>
-                <NavDropdown eventKey={1} className='mynav-dropdown' title="Photography" id="basic-nav-dropdown">
-                    <MenuItem eventKey={2.1}> <Link to='/programming/webdev'>Concert/Festival</Link></MenuItem>
-                    <MenuItem eventKey={2.2}>Portrait</MenuItem>
-                    <MenuItem eventKey={2.3}>Product</MenuItem>
-                    <MenuItem eventKey={2.4}>Landscape</MenuItem>
+                <NavDropdown eventKey={2} className='mynav-dropdown' title="Photography" id="basic-nav-dropdown">
+                    <MenuItem eventKey={2.1}><Link to='/photos/concert'>Concert/Festival</Link></MenuItem>
+                    <MenuItem eventKey={2.2}><Link to='/photos/portrait'>Portrait</Link></MenuItem>
+                    <MenuItem eventKey={2.3}><Link to='/photos/product'>Product</Link></MenuItem>
+                    <MenuItem eventKey={2.4}><Link to='/photos/landscape'>Landscape</Link></MenuItem>
+                    <MenuItem eventKey={2.5}><Link to='/photos/travel'>Travel</Link></MenuItem>
                 </NavDropdown>
+                <NavItem className="mynav-link" eventKey={3}>
+                    <Link to="/Design">Design</Link>
+                </NavItem>
+                <NavItem className="mynav-link" eventKey={4}>
+                    <Link to="/Resume">Resume</Link>
+                </NavItem>
+                <NavItem className="mynav-link" eventKey={5}>
+                    <Link to="/contact">Contact</Link>
+                </NavItem>
+                
+                
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
