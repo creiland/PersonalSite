@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../ProjectCard';
 import spotifyimg from '../../img/spotifyimg.png';
-//import App from '../../spotify/stage-3/src/App'
+import personal from '../../img/PersonalImg.png';
 
 class WebDevProjects extends Component{
     render() {
@@ -20,7 +20,7 @@ class WebDevProjects extends Component{
                     name="Personal Site" 
                     collabs="N/A" 
                     date="January, 2018" 
-                    img={spotifyimg} 
+                    img={personal} 
                     tech="React, Firebase" 
                     github="https://github.com/creiland/PersonalSite"
                     link="/"/>

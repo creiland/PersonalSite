@@ -4,6 +4,20 @@ import { Link } from 'react-router-dom';
 
 class ProjectCard extends Component{
     render() {
+        let content = null
+        if(this.props.link.startsWith("http")){
+            content = (<a className="proj-btn" href={this.props.link} aria-label="new playlist">
+                            <div className="btn-outline">
+                                <p>View Project</p>
+                            </div>
+                        </a>)
+        } else {
+            content = (<Link className="proj-btn" to={this.props.link} aria-label="new playlist">
+                            <div className="btn-outline">
+                                <p>View Project</p>
+                            </div>
+                        </Link>)
+        }
         return (
             <div className='project-card-right'>
                 <div className="proj-card-content">
@@ -23,11 +37,7 @@ class ProjectCard extends Component{
                                     Github
                                 </div>
                             </a>
-                            <Link className="proj-btn" to={this.props.link} aria-label="new playlist">
-                                <div className="btn-outline">
-                                    <p>View Project</p>
-                                </div>
-                        </Link>
+                            {content}
                         </div>
                     </div>
                 </div>
