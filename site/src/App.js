@@ -15,6 +15,8 @@ import Portrait from './components/photography/Portrait';
 import Travel from './components/photography/Travel';
 import ProductPhotos from './components/photography/ProductPhotos.js';
 import Landscape from './components/photography/Landscape';
+import SpotifyProject from './components/programming/SpotifyProject'
+import KCC from './components/programming/DataScienceProjects/KCCHousePrices'
 
 
 
@@ -35,9 +37,15 @@ class App extends Component {
           <Route path = '/photos/product' component={ProductPhotos} />
           <Route path = '/photos/travel' component={Travel} />
           <Route path = '/photos/landscape' component={Landscape} />
+          {/* Routes for weddev projects*/}
+          <Route path = '/webdev/spotify' component={SpotifyProject} />
+          {/* Routes for data science projects*/}
+          <Route path = '/datascience/houseprices' component={KCC} />
+          {/*Misc routes*/}
           <Route path = '/contact' component={Contact} />
           <Route path = '/resume' component={Resume} />
           <Route path = '/design' component={Design} />
+          {}
           <Redirect to = '/' />
         </Switch>
       </div>

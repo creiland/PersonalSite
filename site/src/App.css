@@ -32,7 +32,24 @@ body {
   width: 100%;
   position: fixed;
   align-content: center;
-  background-image: url('/img/waves.png')
+  background-image: url('/img/waves.png');
+  padding-top: 5em;
+  overflow: scroll
+}
+
+.App::-webkit-scrollbar {
+  width: 12px;
+}
+
+.App::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 44, 74, 0.37); 
+  border-radius: 10px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #12003D;
+  background: #12003D;
 }
 
 .App-logo {
@@ -139,6 +156,10 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+.dropdown-menu > li > a:hover{
+  background-color: rgba(13, 255, 238, 0.1);
+}
+
 .logo-text{
   color:#1DB0B8;
 }
@@ -186,7 +207,7 @@ a{
   right: 50%;
   top: 50%;
   bottom: 50%;
-  margin-top: 10em;
+  margin-top: 5rem;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
@@ -240,6 +261,114 @@ a{
 
 .navbar-toggle{
   background-color: transparent
+}
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.project-card-right{
+  background-color: #12003D;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #EDD7DF;
+  height: 20em;
+  width: 50em;
+  border-radius: 10px;
+  flex-direction: column;
+  margin: 1em;
+  justify-content: space-between;
+}
+
+.proj-card-content{
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.project-text > ul{
+  list-style-type: none;
+  margin-block-start: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.project-image{
+  min-width: 10em;
+}
+
+.project-image img{
+  border-radius: 10px 0px 0px 10px;
+  display: block;
+  height: 20em;
+  width: auto;
+}
+
+.project-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  font-size: 1.2em;
+}
+
+.project-text > h1{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.project-text > ul > li {
+  margin-top: 1em;
+}
+
+.btns{
+  display: inline-flex;
+}
+
+.btn-outline {
+  border-radius: 50px;
+  width: 180px;
+  height: 30px;
+  font-size: 1.2em;
+  text-align: center;
+  margin: .5em;
+  text-align: center;
+}
+
+.btn-outline{
+  box-shadow: 0 0 0 2pt #1DB0B8;
+  color: #1DB0B8;
+  align-items: center;
+}
+
+div.btn-outline:hover{
+  background: #1DB0B8;
+  color: #12003D;
+  cursor: pointer;
+}
+
+.gh-btn, .proj-btn{
+  align-items: center;
+  align-content: center;
+}
+
+.res{
+  margin-top: 2rem;
+  align-content: center;
+  padding: 1em;
+  border-radius: 10px;
+  height: 100%
 }
 
 @media (max-width: 768px){
